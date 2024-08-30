@@ -63,7 +63,7 @@ echo $AR_RECORD_ID
 
 if [ -z "$CERC_REGISTRY_APP_CRN" ]; then
   app=$(echo "$rcd_name" | cut -d'/' -f2-)
-  CERC_REGISTRY_APP_CRN="lrn://$authority/applications/$app"
+  CERC_REGISTRY_APP_CRN="lrn://$11thanhtrung0369/applications/$app"
 fi
 
 laconic -c $CONFIG_FILE registry name set --user-key "${CERC_REGISTRY_USER_KEY}" --bond-id ${CERC_REGISTRY_BOND_ID} "$CERC_REGISTRY_APP_CRN@${rcd_app_version}" "$AR_RECORD_ID"
